@@ -53,21 +53,19 @@ function game() {
     let playerSelection;
     let result;
 
-    for (let i = 0; i < 5; i++) {
-        playerSelection = prompt("Enter rock, paper, or scissors:", '').trim();
-        result = playRound(playerSelection, getComputerChoice());
-        switch (result) {
-            case 0:
-                break;
-            case 1:
-                playerScore += 1;
-                break;
-            case -1:
-                computerScore += 1;
-                break;
-            default:
-                console.log("Something went wrong in game()");
-        }
+    playerSelection = prompt("Enter rock, paper, or scissors:", '').trim();
+    result = playRound(playerSelection, getComputerChoice());
+    switch (result) {
+        case 0:
+            break;
+        case 1:
+            playerScore += 1;
+            break;
+        case -1:
+            computerScore += 1;
+            break;
+        default:
+            console.log("Something went wrong in game()");
     }
 
     console.log("Final score\n" + `Player: ${playerScore}\n` + `Computer: ${computerScore}`);
