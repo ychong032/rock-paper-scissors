@@ -5,8 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock, Paper, Scissors</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <script src="script.js"></script>
+    <div id="header">
+        <h1>Rock, Paper, Scissors!</h1>
+    </div>
+    <div id="game-container">
+        <div id="game-header">Choose wisely</div>
+        <div id="button-container">
+            <button id="rock">Rock</button>
+            <button id="paper">Paper</button>
+            <button id="scissors">Scissors</button>
+        </div>
+        <div id="outcome">Click a button above to play!</div>
+        <div id="score-container">
+            <div class="score">
+                <div id="player-score-header">You</div>
+                <div id="player-score">0</div>
+            </div>
+            <div class="score">
+                <div id="computer-score-header">Them</div>
+                <div id="computer-score">0</div>
+            </div>
+        </div>
+        <button id="replay">Replay</button>
+    </div>
+    <div id="footer">
+        Made by <a href="https://github.com/ychong032" target="_blank">ychong032</a>
+    </div>
 </body>
 </html>
